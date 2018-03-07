@@ -1,5 +1,4 @@
-# simpleGUI
-# must be in gksudo nautilus
+
 from Tkinter import *
 import os
 import webbrowser
@@ -10,15 +9,9 @@ from tkFileDialog import asksaveasfile
 
 root = Tk()
 root.title("METRo")
-#root.configure(background = 808080)
-
-# grab length of the array then subtract the length of the array
-# vary code for each variable then add together
-
 
 
 class Application(Frame):
-    # declaring global variables
     global code0
     global code
     global code1
@@ -261,9 +254,9 @@ def csv_xml():
 
 
 
-    def create_button(self):
-        self.button = Button(root, text="Convert CSV Forecast to XML", command=self.forecast_conversion,
-                             justify='center')
+  #  def create_button(self):
+   #     self.button = Button(root, text="Convert CSV Forecast to XML", command=self.forecast_conversion,
+    #                         justify='center')
 
     def forecast_conversion(self):
         forecast_conversion = tkFileDialog.askopenfilename(filetypes=(("All files", "*.*"), ("XML", "*.xml")))
